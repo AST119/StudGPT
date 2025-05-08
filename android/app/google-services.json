@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "31030399602",
+    "firebase_url": "https://studgpt-486c7-default-rtdb.firebaseio.com",
+    "project_id": "studgpt-486c7",
+    "storage_bucket": "studgpt-486c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31030399602:android:bc2f71432093dc99e668eb",
+        "android_client_info": {
+          "package_name": "com.example.studgpt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31030399602-n9lask0aagq9encj0rjq8onuoi9np44k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studgpt",
+            "certificate_hash": "fbe29324b1341c4930b6c7d09e9939d14c7926a0"
+          }
+        },
+        {
+          "client_id": "31030399602-bed9457o82mei9usm6vbea9nndk8e3l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyNs6BuZ5eDmkO1h8rehuXXr5rIe21-zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31030399602-bed9457o82mei9usm6vbea9nndk8e3l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

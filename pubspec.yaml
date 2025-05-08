@@ -1,0 +1,88 @@
+name: StudGPT
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  fl_chart: ^0.69.1
+  shared_preferences:
+  http: ^1.1.0
+  image_picker: ^1.0.7
+  speech_to_text: ^7.0.0
+  path_provider: ^2.1.1
+  google_generative_ai:
+  flutter_math_fork: ^0.7.3
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.13.0
+  firebase_auth: 5.5.3
+  google_sign_in: ^6.2.1
+  youtube_player_flutter: ^9.1.1
+  uuid: ^4.5.1
+  intl:
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  hive_generator: ^2.0.1 # Or latest compatible version
+  build_runner: ^2.4.9
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.0
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+flutter_launcher_icons:
+  android: "launcher_icon" # Can be true or a specific name
+  ios: true                # Set to false if you ONLY want to generate Android icons
+  image_path: "lib/logo.png" # IMPORTANT: Update this path to your logo file
+  min_sdk_android: 21 # Optional: Ensures compatibility with adaptive icons requires min SDK 21
+
+  # --- For Adaptive Icons (Android 8.0+): Highly Recommended ---
+  # You need BOTH a background and a foreground image/color
+
+  # Option 1: Background Color + Foreground Image
+  adaptive_icon_background: "#FFFFFF"  # Hex color code for the background
+  adaptive_icon_foreground: "lib/logo.png" # Path to foreground image (transparent background)
+
+  # Option 2: Background Image + Foreground Image
+  # adaptive_icon_background: "assets/images/logo_background.png" # Path to background image
+  # adaptive_icon_foreground: "assets/images/logo_foreground.png" # Path to foreground image (transparent background)
+
+  # Option 3: Simpler - Use the main image_path for foreground and specify background color/image
+  # adaptive_icon_background: "#FFFFFF"
+  # image_path_android: "assets/images/logo_foreground.png" # If foreground differs from main logo
+
+  # --- End Adaptive Icons ---
